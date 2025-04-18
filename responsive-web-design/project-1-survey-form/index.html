@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <h1 id="title" class="text-center">Survey Form</h1>
+      <p id="description" class="description text-center">Thank you for taking the time to help us improve our services.</p>
+    </header>
+    <form id="survey-form">
+      <div class="form-group">
+        <label id="name-label" for="name">Name:</label>
+        <input name="name" id="name" class="form-control" type="text" placeholder="Enter your name" required>
+      </div>
+      <div class="form-group">
+        <label id="email-label" for="email">Email:</label>
+        <input name="email" id="email" class="form-control" type="email" placeholder="Enter your email" required>
+      </div>
+      <div class="form-group">
+        <label id="number-label" for="number">Age:</label>
+        <input name="age" id="number" class="form-control" type="number" min="0" max="100" placeholder="Age">
+      </div>
+      <div class="form-group">
+        <p>Gender:</p>
+        <select name="gender" id="dropdown" class="form-control" required>
+          <option disabled selected value>Select your gender</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <p>Would you recommend our services to someone else?</p>
+        <label><input name="recommendation" type="radio" value="yes" checked>Yes</label>
+        <label><input name="recommendation" type="radio" value="no">No</label>
+        <label><input name="recommendation" type="radio" value="maybe">Maybe</label>
+      </div>
+      <div class="form-group">
+        <p>How did you hear about us?</p>
+        <label><input name="referral" class="input-checkbox" type="checkbox" value="website">Website</label>
+        <label><input name="referral" class="input-checkbox" type="checkbox" value="search-engine">Search engine</label>
+        <label><input name="referral" class="input-checkbox" type="checkbox" value="social-media">Social media</label>
+        <label><input name="referral" class="input-checkbox" type="checkbox" value="other">Other</label>
+      </div>
+      <div class="form-group">
+        <p>Any comments or suggestions?</p>
+        <textarea name="comments" id="comments" class="input-textarea" rows="5" placeholder="Enter your comments here"></textarea>
+      </div>
+      <div class="form-group">
+        <button id="submit" class="submit-button" type="submit">Submit</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
